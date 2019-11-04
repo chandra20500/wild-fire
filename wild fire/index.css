@@ -1,0 +1,172 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+.main{
+    height: 100vh;
+    /*width: 100vw; */
+    background-image: url(wild2.jpg);
+    margin: 0px;
+    padding:0px;
+}
+.overlay{
+    background-color: #162063;
+    /* background-image: linear-gradient(rgba(233, 16, 16, 0.959), blue);  */
+    opacity: 0.8;
+    height: 100vh;
+    /*width: 100vw; */
+    }
+.kgp{
+    height: 6vh;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+.sf{
+    height: 6vh;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+    top: 5%;
+}
+.sf-text{
+    font-size: 5em;
+    font-family: 'Courgette', cursive;
+    color: white;
+    position: absolute;
+    left: 18%;
+    top: 23%;
+}
+.wildfire-text{
+    font-size: 5em;
+    font-family: 'Economica', sans-serif;
+    text-shadow: 0 0 30px rgb(244, 211, 2);
+    color: white;
+    position: absolute;
+    left: 18%;
+    top: 60%;
+}
+.about-title{
+    font-size:2em;
+    padding-left:50%;
+    font-family: 'Courgette', cursive;
+}
+.about{
+    color:white;
+    position:absolute;
+    max-width: 40%;
+    left:50%;
+    top:23%;
+    font-size:1.2em;
+    font-family: 'Economica', sans-serif;
+}
+.about-text{
+    padding-left: 20%;
+}
+
+.btn-transparent {
+    /* background: rgb(253, 249, 249); */
+
+    background-color:white;
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    color:#162063;
+    z-index: 1000;
+    position: relative;
+}
+
+.btn-transparent:hover {
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+}
+.rules{
+    height: 100vh;
+    background-color: #2334a1 ;
+    background-image: url('map.png');
+
+
+
+}
+.rules-text{
+    position: relative;
+    left:15%;
+    top:20%;
+    font-size: 1.2em;
+    margin: 0px;
+    font-family: 'Economica', sans-serif;
+    padding: 0px;
+    color: white;
+    max-width: 70%;
+}
+.rules-title{
+    font-size:3em;
+    padding-left:45%;
+    color:white;
+    position: relative;
+    top:10%;
+    font-family: 'Courgette', cursive;
+}
+.register{
+    background-color: #2334a1;
+}
+.overlay-register{
+    background-image: url('bg-left.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.form{
+    max-width: 50%;
+    background-color: black;
+    height:85%;
+    opacity:0.5;
+    position: relative;
+    left:25%;
+    top:10%;
+    border-radius: 40px;
+}
+.register-title{
+    font-size:3em;
+    padding-left:30%;
+    color:white;
+    position: relative;
+    top:0%;
+    font-family: 'Courgette', cursive;
+}
+.register-body{
+    position: relative;
+    top:5%;
+    max-width: 70%;
+    left:15%;
+}
+.input-field{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.btn-transparent-register {
+    /* background: rgb(253, 249, 249); */
+
+    background-color:white;
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    color:#162063;
+    z-index: 1000;
+    position: relative;
+    left:30%;
+}
+
+.btn-transparent-register:hover {
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+}

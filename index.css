@@ -1,0 +1,387 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+.main{
+    height: 100vh;
+    /*width: 100vw; */
+    background-image: url(bg_fire.jpg);
+    margin: 0px;
+    padding:0px;
+    background-size: cover;;
+}
+.overlay{
+    
+    /* background-image: linear-gradient(rgba(233, 16, 16, 0.959), blue);  */
+    height: 100vh;
+    /*width: 100vw; */
+    /* display: none; */
+    }
+.kgp{
+    height: 6vh;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+.sf{
+    height: 6vh;
+    position: absolute;
+    left: 10%;
+    cursor: pointer;
+    top: 5%;
+}
+.sf-text{
+    font-size: 5em;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: 'Nosifer', cursive;
+    color: white;
+    position: absolute;
+    left: 25%;
+    text-align: center;
+    text-shadow: 0 0 30px rgb(230, 226, 13);
+    top: 23%;
+    animation: glow 0.5s infinite alternate;
+}
+.wildfire-text{
+    font-size: 5em;
+    font-family: 'Nosifer', cursive;
+    text-shadow: 0 0 30px rgb(244, 18, 2);
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 31%;
+    top: 60%;
+    animation: glow 0.5s infinite alternate;
+}
+.about-title{
+    text-align: center;
+    font-size:2em;
+    /* padding-left:10%; */
+    background-color: black;
+    color: white;
+    font-family: 'Courgette', cursive;
+} 
+.about{
+    background-color:black ;
+    color:rgb(255, 255, 255);
+    position: relative;
+    padding-left:18%;
+    /* align-content: center; */
+    /* top:23%; */
+    font-size:1.2em;
+    font-family: 'Economica', sans-serif;
+    /* border-radius: 10%; */
+}
+.about-text{
+    /* padding-left: 10%; */
+    max-width: 80%;
+    text-align: center;
+    /* padding-left: 0%; */
+}
+
+.btn-transparent {
+    /* background: rgb(253, 249, 249); */
+
+    background-color:white;
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    color:#162063;
+    z-index: 1000;
+    position: relative;
+}
+
+.btn-transparent:hover {
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+}
+.rules{
+    height: 100vh;
+    background-color: black ;
+    background-image: url('map.png');
+}
+.rules-text{
+    position: relative;
+    left:15%;
+    top:20%;
+    font-size: 1.2em;
+    margin: 0px;
+    font-family: 'Economica', sans-serif;
+    padding: 0px;
+    color: white;
+    max-width: 70%;
+    /* text-align: center; */
+}
+.rules-title{
+    font-size:3em;
+    padding-left:45%;
+    color:white;
+    position: relative;
+    top:10%;
+    font-family: 'Courgette', cursive;
+}
+.register{
+    background-color: #000105;
+}
+.overlayregister{
+    background-image: url('bg-left.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.form{
+    max-width: 50%;
+    height:85%;
+    position: relative;
+    left:45%;
+    top:10%;
+    border-radius: 40px;   
+}
+.register-title{
+    font-size:3em;
+    padding-left:30%;
+    color:white;
+    position: relative;
+    top:0%;
+    font-family: 'Courgette', cursive;
+}
+.register-body{
+    position: relative;
+    top:5%;
+    max-width: 70%;
+    left:15%;
+}
+.input-field{
+    width: 100%;
+    border-radius: 20px;
+    height: 5vh;
+    text-align: center;
+    border-color: rgb(13, 201, 54);
+    border-width: 2px;
+}
+
+.btn-transparent-register {
+    /* background: rgb(253, 249, 249); */
+
+    background-color:rgb(38, 216, 106);
+    -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+    -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    border-radius: 50px;
+    border-color: rgb(38,216,106);
+    height: 50px;
+    width: 200px;
+    color:rgb(0, 0, 0);
+    z-index: 1000;
+    position: relative;
+    left:30%;
+}
+
+.btn-transparent-register:hover {
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+}
+
+input {
+    background: transparent;
+}
+select{
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+option{
+    color: rgb(255, 254, 254);
+    
+}
+
+@keyframes glow {
+    to {
+        text-shadow: 0 0 10px red;
+    }
+}
+
+@keyframes borderglow {
+    to {
+        text-shadow: 0 0 10px green;
+        border-color: green;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .sf-text{
+        position: relative;
+        left: 0%;
+        top: 30%;
+        font-size: 6em;
+        
+    }
+    .main{
+        height: 100vh;
+        /*width: 100vw; */
+        background-image: url(bg-mobile.jpg);
+        margin: 0px;
+        padding:0px;
+        width: 100vw;
+        background-size: cover;
+        background-origin: inherit;
+
+    }
+    
+    .kgp{
+        height: 6vh;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        cursor: pointer;
+    }
+    .sf{
+        height: 6vh;
+        position: absolute;
+        left: 20%;
+        cursor: pointer;
+        top: 5%;
+    }
+    
+    .wildfire-text{
+        font-size: 8em;
+        font-family: 'Nosifer', cursive;
+        text-shadow: 0 0 30px rgb(244, 18, 2);
+        color: rgb(255, 255, 255);
+        position: relative;
+        max-width: 100vw;
+        left: 0;
+        top: 40%;
+        text-align: center;
+        animation: glow 0.5s infinite alternate;
+    }   
+    .about{
+        background-color:black ;
+        height: 100vh;
+        color:rgb(255, 255, 255);
+        position: relative;
+        padding-left:0%;
+        font-size:1.2em;
+        font-family: 'Economica', sans-serif;
+        padding-top:20%;
+    }
+    .about-text{
+        max-width: 100%;
+        font-size: 2.4em;
+        text-align: center;
+        top: 30%;
+    }
+    .about-title{
+        text-align: center;
+        font-size:5em;
+        position: relative;
+        top: 10%;
+        background-color: black;
+        color: white;
+        font-family: 'Courgette', cursive;
+    } 
+    
+    .rules{
+        height: 100vh;
+        background-color: black ;
+        background-image: url('map.png');
+    }
+    .rules-text{
+        position: relative;
+        top:10%;
+        font-size: 2.5em;
+        margin: 0px;
+        font-family: 'Economica', sans-serif;
+        color: rgb(255, 255, 255);
+        max-width: 100%;
+        padding: 0;
+        left:0;
+        padding: 0;
+    }
+    .rules-title{
+        font-size:7em;
+        color:white;
+        position: relative;
+        top: 0;
+        padding:0;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+    }
+    .form{
+        max-width: 100%;
+        height:85%;
+        position: relative;
+        left:0%;
+        top:10%;
+        border-radius: 40px;   
+    }
+    .register-title{
+        font-size:5em;
+        padding-left:20%;
+        color:white;
+        position: relative;
+        top:0%;
+        font-family: 'Courgette', cursive;
+    }
+    .register-body{
+        position: relative;
+        top:5%;
+        max-width: 70%;
+        left:15%;
+    }
+    .input-field{
+        width: 100%;
+        border-radius: 20px;
+        height: 5vh;
+        font-size: 2em;
+        text-align: center;
+        border-color: rgb(174, 236, 4);
+        border-width: 2px;
+        color: white;
+        margin: 10px;
+        }
+    
+    .btn-transparent-register {
+        background-color:rgb(38, 216, 106);
+        -webkit-transition: background .2s ease-in-out, border .2s ease-in-out;
+        -moz-transition: background .2s ease-in-out, border .2s ease-in-out;
+        -o-transition: background .2s ease-in-out, border .2s ease-in-out;
+        transition: background .2s ease-in-out, border .2s ease-in-out;
+        border-radius: 50px;
+        border-color: rgb(38,216,106);
+        height: 100px;
+        width: 400px;
+        font-size: 2.5em;
+        color:rgb(0, 0, 0);
+        z-index: 1000;
+        position: relative;
+        left:25%;
+    }
+    
+    .btn-transparent-register:hover {
+        color: white;
+        background-color: rgba(14, 11, 11, 0.2);
+        }   
+    
+    input {
+        background-color: black;
+        /* background: transparent; */
+        color: white;
+    }
+    select{
+        background: transparent;
+        color: white;
+        text-align: center;
+    }
+    option{
+        font-size: 0.5em;
+        color: rgb(17, 16, 16);
+        
+    }
+    
+}
