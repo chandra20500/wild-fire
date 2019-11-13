@@ -436,6 +436,7 @@ footer .footerlogo{
 }
 .contact-sf{
     margin-top: 0%;
+    height: 40px;
 }
 .copyright{
     z-index: 2000;
@@ -789,4 +790,7 @@ footer .footerlogo{
 a:hover{
     color: yellow;
     text-decoration: none;
+}
+.links{
+        color:white
 }
