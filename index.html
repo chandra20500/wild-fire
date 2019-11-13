@@ -4,65 +4,47 @@
         <title>
             Wild fire
         </title>
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Nosifer|Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Aldrich|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Aclonica|Aldrich|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- <script>
-        
-$(document).on('click', '#submit', function()
-    {        
-        var x1 = document.getElementById('name').value;
-        var x2 = document.getElementById('team-name').value;
-        var x3 = document.getElementById('number').value;
-        var x4 = document.getElementById('email').value;
-        var x5 = document.getElementById('institute').value;
-        var x6 = document.getElementById('size').value;
-        var x7 = document.getElementById('city').value;
-        var x8 = document.getElementById('url').value;
-
-
-            $.ajax({  
-                url:"insertdata.php",  
-                method:"POST",  
-                data: {
-                    'name': x1,
-                    'teamname' : x2,
-                    'number' : x3,
-                    'email' : x4,
-                    'institute' : x5,
-                    'size' : x6,
-                    'city' : x7,
-                    'url' : x8
-                    },
-                success:function(data){  
-
-                    console.log(data);
-
-                },
-                error:function(data){
-
-                    alert("error");
-
-                }
-            }); 
-    });
-        </script> -->
     </head>
-    <body>
+    <body onload="preloader()">
+                <div id="preloader">
+                    
+                </div>
                 <div class="main">
-                   <div class="overlay">
+                    <div class="navbar">
                             <img src="kgp-logo.png" class="kgp">
                             <img src="sf-logo.png" class="sf">
+                            <div class="navigation">
                                 
+                                <a href="#about" class="navbar-content">ABOUT</a>
+                                <a href="#prize" class="navbar-content">PRIZE</a>
+                                <a href="#winners" class="navbar-content">PAST WINNERS</a>
+                                <a href="#rules" class="navbar-content">RULES</a>
+                                <a href="#register" class="navbar-content">REGISTER</a>
+                                <a href="sponser.html" class="navbar-content ">SPONSER</a>
+                            </div>
+                        </div>
+                        <a href="sponser.html" class="sponser-n">SPONSERS &nbsp;</a>
+
+                        <div class="overlay">                               
                             
                             <div class="sf-text">
                                        Spring Fest 
                                        <br/>
-                                        2020
+                                             PRESENTS
                             </div>
-                            <div class="wildfire-text">
-                                    WILDFIRE
+                            <div class="wildfire">
+                                    <img src="WildFireLogo.png" height="250px" width="90%" />
                             </div>
                             
                             <!-- <div class="about">
@@ -93,9 +75,9 @@ $(document).on('click', '#submit', function()
                             
                             </div>                  
                 </div>
-
                 
-                <div class="about-title">
+                
+                <div class="about-title" id="about">
                         What is Wild Fire ?
                     </div>
                 <div class="about">
@@ -118,46 +100,136 @@ $(document).on('click', '#submit', function()
                                 <br/> <br/>
                     </div>
                 </div>
+                <div class="prize" id="prize">
+                    <div class="prize-heading">
+                        PRIZE 
+                    </div>
+                        <div class="prize-text">
+                            <ul>
+                                <li>
+                                        Cash prize INR 1 Lakh
+                                </li>
+                                <li>
+                                        Chance to open for the headlining band at Spring Fest, IIT Kharagpur in front of 30,000+ crowd.
+                                </li>
+                                <li>
+                                        Winner band will feature on an episode of Maed in India. This will include,<br />
+                                        Recording the interview and music performed on the show at a reputed music studio in Mumbai<br />
+                                        Mixing and mastering the music performed on the show<br />
+                                        Distributing the audio on all major podcast apps like Apple Podcasts, Spotify, Google Podcasts, JioSaavn, TuneIn, Stitcher, etc.<br />
+                                        Two minute-long video promos along with a set of behind the scenes photos from the episode.<br />
+                                        The total cost for producing the episode is about Rs. 2.5 lacks.
+                                </li>
+                                <li>
+                                        Winner will get an 8-hour free recording session at Resonance Studios and Academy worth Rs.1 lack.
+                                </li>
+                                <li>
+                                        Winners will get free training at music camp at Swarnabhoomi Music academy worth INR 1.25 lakhs and runner up will get 50% off on this camp.
+                                </li>
+                                <li>
+                                        Songdew will release the music of the winning band/artist globally to over 150 digital platforms including Spotify, Saavn, Amazon Music,<br/>
+                                        Apple Music, Gaana, Google Play Music, etc. Promote the release on Songdew TV (which has a reach of around 40 Million Households).
+                                </li>
+                            </ul> 
+                        </div>
+                </div>
 
-                <div class="rules">
-                    <div class="rules-title">
+                <div class="prize" id="rules">
+                    <div class="prize-heading">
                         RULES
                     </div>
-                    <div class="rules-text">
+                    <div class="prize-text">
                         <ul>
                            <li>
-                            Offline prelims will be conducted in Bangalore, Delhi, Mumbai, Kolkata, Guwahati and Kathmandu.
-                            Online prelims will also be conducted wherein participating bands can register.
+                                 Offline prelims will be conducted in Bangalore, Delhi, Mumbai, Kolkata and Guwahati.
+                                 Online prelims will also be conducted wherein participants must send a link to their video performance at wildfire.sf2020@gmail.com.
                             </li>
 
                             <li>
-                                After the first round, a shortlist of bands would be released who will qualify to perform 
-                                at the main event at IIT Kharagpur.
+                                 After the first round, a shortlist of bands would be released who will qualify to perform at the main event at IIT Kharagpur.
                             </li>
                             <li>
-                                The main event at IIT Kharagpur would consist of 2 rounds: prefinals and finals.
+                                    The main event at IIT Kharagpur would consist of 2 rounds: prefinals and finals. 4. In prefinals at IIT Kharagpur, 
+                                    a group will be required to perform at least three numbers of their choice within 20 minutes. (Amps on to amps off and inclusive of sound check)
+                                   
                             </li>
-                            
                             <li>
-                                In prefinals at IIT Kharagpur, a group will be required to perform at least three numbers of their choice within 20 minutes. (Amps on to amps off and inclusive of sound check)
+                                    In finals, a group will be required to perform at least 4 numbers of their choice within 40 minutes (Amps on to amps off inclusive of sound check).
                             </li>              
                             <li>
-                                In finals, a group will be required to perform at least 4 numbers of their choice within 40 minutes (Amps on to amps off inclusive of sound check).
-                                Bands will be disqualified on the spot for misconduct, obscenity or foul language, and will be banned from performing at all subsequent editions of spring fest.
-                                    
+                                    Bands will be disqualified on the spot for misconduct, obscenity or foul language, and will be banned from performing at all subsequent editions of spring fest.    
+                            </li>
+                            <li>
+                                    Only English and Hindi Rock Music are allowed
                             </li>
                             <li>
                                     Equipment provided will be:<br/>
-                                    • One bass amplifier speaker<br/>
-                                    • One lead amplifier speaker    
+                                    a. One bass amplifier speaker<br/>
+                                    b. One lead amplifier speaker  <br/>
+                                    c. Adequate microphones d. Drum set (Participants can bring along with your own cymbals and chokes/high hats)  
+                            </li>
+                            <li>
+                                    Bands will have to bring their own musical instruments and special effects. However, programmed music is not allowed.
+                            </li>
+                            <li>
+                                    Spring Fest will not be held responsible for the failure of any instrument.
                             </li>
                             
                         </ul>
                     </div>
                                     
                     </div>
+                    <div class="winners-heading" id="winners">
+                        <h1>
+                            Past winners
+                        </h1>
+                    </div>
+                    <div class="winners">
+                        
+                        <div class="card">
+                            <image src="UA.jpg" height="100%"/>
+                            <div class="band-name-w">
+                                Undereground Authority
+                            </div>
+                        </div>
+                        <div class="card">
+                                <image src="parikrama.jpg" height="100%"/>
+                                <div class="band-name-w">
+                                        Parikrama
+                                    </div>
+                        </div>
+                        <div class="card">
+                                <image src="kryptos.jpg" height="100%" />
+                                <div class="band-name-w">
+                                    Kryptos
+                                </div>
+                        </div>                       
+
+                    </div>
+                    <div class="winners2">
+                        
+                            <div class="card2">
+                                    <image src="ZG.jpg" height="100%" width="100%"/>
+                                    <div class="band-name-w">
+                                            Zygnema
+                                    </div>
+                                </div>
+                                <div class="card2">
+                                        <image src="CD.jpg" height="100%" width="100%"/>
+                                        <div class="band-name-w">
+                                                cassini division
+                                        </div>
+                                </div>
+                                <div class="card2">
+                                        <image src="ADB.jpg" height="100%" width="100%"/>
+                                        <div class="band-name-w">
+                                                Adbhutam
+                                        </div>
+                                        
+                                </div>
+                    </div>
                     
-                <div class="register">
+                <div class="register" id="register">
                     <div class="overlayregister">
                         <div class="form">
                                 <div class="register-title">
@@ -165,31 +237,132 @@ $(document).on('click', '#submit', function()
                                 </div>
 
                                 <div class="register-body">
-                                    <form action="insertdata.php" method="POST">
-                                        <input type="text" id="name" placeholder="Name" class="input-field" name="name">      <br />  <br/>                            
-                                        <input type="text" id="team-name" placeholder="Team name" class="input-field" name="team-name">       <br />  <br/>                            
-                                        <input type="number" id="number" placeholder="Mobile number" class="input-field" name="number">                <br />  <br/>                      
-                                        <input type="text" id="email" placeholder="E mail" class="input-field" name="email"><br />  <br/>  
-                                        <input type="text" id="institute" placeholder="Name of Institution" class="input-field" name="institute">      <br />  <br/>                            
-                                        <select class="input-field" id="size" name="size">
+                                    <form action="https://docs.google.com/forms/d/e/1FAIpQLScgr86HDCYpdgcIYdOuXtJxfwN3ZHAH5CPKGGvCR104L3X_xw/formResponse" method="POST">
+                                       <p> <input type="text" id="name" placeholder="Name" class="input-field" name="entry.177643183">          </p>                       
+                                        <p> <input type="text" id="team-name" placeholder="band name" class="input-field" name="entry.956647024">   </p>                            
+                                        <p><input type="number" id="number" placeholder="Mobile number" class="input-field" name="entry.704927778">      </p>
+                                        <p> <input type="text" id="email" placeholder="Band E mail" class="input-field" name="entry.2032033899"> </p>
+                                        <p> <input type="text" id="institute" placeholder="Name of Institution" class="input-field" name="entry.1283792846"> </p>                             
+                                        <p> <input type="text" id="type" placeholder="type of band" class="input-field" name="institute"> </p>
+                                        <p>
+                                        <select class="input-field" id="size" name="entry.884512231" onchange="show_member(this.value)" style="background: #1f074b;">
                                             <option> select team size </option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
                                             <option value="3">3</option>
                                             <option value="4">4</option>
                                             <option value="5">5</option>
                                             <option value="6">6</option>
                                             <option value="7">7</option>
-                                        </select>   
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>   </p>
                                         <br/><br/>                         
-                                        <input type="text" id="city" placeholder="city" class="input-field" name="city">      <br />  <br/>                                
-                                        <input type="text" id="url" placeholder="URL of video" class="input-field" name="url"> <br />  <br/>        
+                                        <p><input type="text" id="city" placeholder="city" class="input-field" name="entry.972048782"> </p>
+                                        <div id="members_box"></div>
+                                        <input type="text" id="url" placeholder="URL of video" class="input-field" name="entry.1501581755">     <br /><br/>   
                                         <input type="submit" id="submit" class="btn-transparent-register" placeholder="submit">
                                     </form>
                                 </div>
+                                <br />
+                                <br />
+                                
                         </div>
+                        <!-- <div class="form2">
+                            <form id="input_form">
+                                <input type="text"  id="name" class="form-items" name="name" placeholder="Name"  required> <br>
+                                <input type="text"  id="gname" class="form-items" name="grp-name" placeholder="Group-name"  required> <br>
+                                <input type="number" id="mobile" class="form-items numbercheck" name="mobile" placeholder="Mobile No." required> <br>
+                                <input type="email"  id="email" class="form-items" name="email" placeholder="Email" required> <br>
+                                <input type="text"  id="insti" class="form-items" name="insti" placeholder="Name of Institution" required> <br>
+                                <select name="size" id="size" class="form-items" onchange="show_member(this.value)" required>
+            
+                                    <option value="" selected>--Team Size--</option>
+                                      <option value="1">1</option>
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                      <option value="5">5</option>
+                                      <option value="6">6</option>
+                                      <option value="7">7</option>
+                                </select> <br>
+                                <div id="members_box"></div>
+                                <input type="text" id="city" class="form-items" name="city"     placeholder="City"  required> <br>
+                                <input type="url" id="url" class="form-items" name="url" placeholder="Url Of the Video"> <br>
+                                <div id="mem_size"></div>
+                                <input type="submit" id="reg-submit" name="" value="Submit">
+                                <p id="success_msg"></p>
+                            </form>
+                        </div> -->
+        <footer>
+            <img src="WildFireLogo.png" height="77px" class="footerlogo"/>
+            <p class="copyright">copyright @ spring fest 2020 all rights reserved</p>
+                        <div class="credits">
+                                <div class="c-f ctm CTM-credits">
+                                        <!-- <center><a href="https://www.facebook.com/aayush.mittal.31?ref=br_rs"> Contact US</a></center>
+                                       
+                                        <a href="https://www.facebook.com/aayush.mittal.31?ref=br_rs"> -->
+                                            <!-- <img src="ctm.jpg" height="80px" class="ctm-img" /> -->
+                                            <!-- <p>
+                                                <h4>Ayush mittal</h4>
+                                                <br/>
+                                                <a href="#">Event Head</a>
+                                                <br />
+                                                <a href="#">+91 7742984890</a>
+                                                <br/>
+                                                <a href="mailto:aayush@springfest.in" target="_blank" rel="noopener noreferrer" class="member-email">aayush@springfest.in</a>
+                                                <br />
+                                                
+                                            </p>
+                                        </a> -->
+                                        <h3>Contact US</h3>
+                                        <h4><a href="https://www.facebook.com/aayush.mittal.31?ref=br_rs">Ayush mittal</a></h4>
+                                        <h6>EVENTS HEAD</h6>
+                                        <a href="mailto:aayush@springfest.in" target="_blank" rel="noopener noreferrer" class="member-email">aayush@springfest.in</a>
+                                        <br />
+                                        <a href="">+91 7742984890</a>
 
+                                
+                                    </div>
+                            <div class="c-f icons">
+                                <div class="contact-sf">
+                                           <a target="blank" href="https://www.facebook.com/springfest.iitkgp/"><img src="facebook.png"  height="40px" class="icon"/></a>
+                                </div>
+                                <div class="contact-sf">
+                                       <a href="https://twitter.com/springfest_kgp" target="blank"><img src="instagram.png"  height="40px" class="icon"/></a> 
+                                </div>
+                                <div class="contact-sf">
+                                        <a href="https://www.instagram.com/iitkgp.springfest/" target="blank"><img src="twitter.png"  height="40px" class="icon"/></a>
+                                </div>
+                                <div class="contact-sf">
+                                        <a href="https://www.snapchat.com/add/spring-fest" target="blank"><img src="snapchat.png"  height="40px" class="icon"/></a>
+                                </div>
+                            </div>
+                                
+                                <div class="c-f CTM-credits">
+                                            <!-- <img src="ctm.jpg" height="80px" class="ctm-img" /> -->
+                                            <p><h4>Website Credits</h4>
+                                                <h5>Brajesh jha</h5>
+                                                <br/>
+                                            <a href="https://www.linkedin.com/in/brajesh-jha-58a433190/"><img src="linkedin.png" height="40px" /></a>
+                                            <a href="https://github.com/chandra20500"><img src="github.png" height="40px" class="mygithub"/></a>
+                                            </p>
+                                    </div>
+                            </div>
+                        </footer>
                     </div>
+                    <!-- copyright @ spring fest 2020 all rights reserved -->
                 </div>
+                
+                
+            <script>
+                function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+                }
+                var loader = document.getElementById('preloader');
+                function preloader(){
+                    loader.style.display = 'none';
+                }
+        </script>
             </body>
 </html>

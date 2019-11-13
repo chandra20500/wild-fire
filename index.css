@@ -1,81 +1,164 @@
+
+html {
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 body{
     margin: 0px;
     padding:0px;
 }
+#preloader{
+    width: 100%;
+    height: 100vh;
+    background: black url(p3.gif) no-repeat center;
+    position: fixed;
+    z-index: 10000000;
+}
+/* width */
+.sponser-n{
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #070606; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(163, 190, 44); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 .main{
     height: 100vh;
-    /*width: 100vw; */
-    background-image: url(bg_fire.jpg);
+    /* background-image: url(bg_image.jpg); */
+    background-size: cover;
+    background-image:
+    /* linear-gradient(to bottom, rgba(12, 64, 143, 0.52), rgba(12, 64, 143, 0.52)), */
+    url('bg.webp');
+/* 
+background-image:
+linear-gradient(to bottom, rgba(223, 255, 109, 0.52), rgba(236, 250, 34, 0.73)),
+url('bg_image.jpg'); */
     margin: 0px;
     padding:0px;
     background-size: cover;;
 }
+@font-face {
+    font-family: LoveNature;
+    src: url('LoveNature.otf');
+  }
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: rgb(0,0,0);
+}
+.navigation{
+    margin-left:30% ;
+    font-size: 1.5em;
+}
+a{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+.navbar-content{
+    color:white;
+}
+.navbar-content:hover{
+    color:white;
+    text-decoration: none;
+}
 .overlay{
-    
-    /* background-image: linear-gradient(rgba(233, 16, 16, 0.959), blue);  */
+    background-color: rgba(0, 0, 0, 0.6);
     height: 100vh;
-    /*width: 100vw; */
-    /* display: none; */
     }
 .kgp{
     height: 6vh;
     position: absolute;
-    left: 5%;
     top: 5%;
     cursor: pointer;
 }
 .sf{
     height: 6vh;
     position: absolute;
-    left: 10%;
+    left: 5%;
     cursor: pointer;
     top: 5%;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Righteous&display=swap');
+
 .sf-text{
-    font-size: 5em;
+    font-size: 2.5em;
     /* font-family: 'Permanent Marker', cursive; */
-    font-family: 'Nosifer', cursive;
+    /* font-family: 'Nosifer', cursive; */
+    /* font-family: 'Francois One', sans-serif; */
+    font-family: 'LoveNature', cursive;
+    /* font-weight: bold; */
     color: white;
     position: absolute;
-    left: 25%;
+    left: 15%;
     text-align: center;
     text-shadow: 0 0 30px rgb(230, 226, 13);
     top: 23%;
-    animation: glow 0.5s infinite alternate;
+    /* animation: glow 0.5s infinite alternate; */
 }
-.wildfire-text{
+.wildfire{
     font-size: 5em;
-    font-family: 'Nosifer', cursive;
+    font-family: 'LoveNature', cursive;
     text-shadow: 0 0 30px rgb(244, 18, 2);
     color: rgb(255, 255, 255);
     position: absolute;
-    left: 31%;
-    top: 60%;
+    left: 12%;
+    top: 50%;
     animation: glow 0.5s infinite alternate;
 }
 .about-title{
     text-align: center;
-    font-size:2em;
+    font-size:2.5em;
     /* padding-left:10%; */
-    background-color: black;
+    padding-top:5%;
+    /* background-color: black; */
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
     color: white;
-    font-family: 'Courgette', cursive;
+    font-family: 'LoveNature', cursive;
 } 
 .about{
-    background-color:black ;
+    /* background-color:black ; */
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     color:rgb(255, 255, 255);
     position: relative;
-    padding-left:18%;
     /* align-content: center; */
     /* top:23%; */
     font-size:1.2em;
-    font-family: 'Economica', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     /* border-radius: 10%; */
 }
 .about-text{
     /* padding-left: 10%; */
-    max-width: 80%;
+    max-width: 70%;
+    position: relative;
+    left:15%;
     text-align: center;
+    /* border: 2px solid black; */
+    background-color: rgba(1, 5, 1, 0.6);
+
+
     /* padding-left: 0%; */
 }
 
@@ -101,54 +184,83 @@ body{
 }
 .rules{
     height: 100vh;
-    background-color: black ;
-    background-image: url('map.png');
+    margin: 10px;
+    /*background-color: black ;*/
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* 
+    background-image: url('try2.jpg'); */
+    background-size: cover;
 }
 .rules-text{
     position: relative;
     left:15%;
-    top:20%;
-    font-size: 1.2em;
+    top:5%;
+    font-size: 1.1em;
     margin: 0px;
-    font-family: 'Economica', sans-serif;
-    padding: 0px;
+    font-family: 'Aclonica', sans-serif;
+    padding: 15px;
     color: white;
     max-width: 70%;
+    background-color: rgba(1, 5, 1, 0.6);
     /* text-align: center; */
+
 }
 .rules-title{
     font-size:3em;
     padding-left:45%;
     color:white;
     position: relative;
-    top:10%;
-    font-family: 'Courgette', cursive;
+    top:5%;
+    font-family: 'LoveNature', cursive;
 }
 .register{
-    background-color: #000105;
+    background-color: #000046;
 }
 .overlayregister{
-    background-image: url('bg-left.png');
+    /* background-image: url('bg-left.png'); */
+    background-color: #000046;
     height: 100vh;
     background-repeat: no-repeat;
 }
 .form{
-    max-width: 50%;
-    height:85%;
+    overflow: auto;
     position: relative;
-    left:45%;
+    max-width: 100%;
+    height:85%;~
+    position: relative;
+    width: 80%;
+    left: 10%;
     top:10%;
     border-radius: 40px;   
 }
+form p {
+    float: left;
+    width: 49%;
+  }
+  form p:not(:nth-child(2n)) {
+    margin-right: 2%;
+  }
+  form p:last-child {
+    clear: both;
+    width: 100%;
+  }
+  form p:nth-last-child(2) {
+    clear: both;
+    width: 100%;
+  }
 .register-title{
     font-size:3em;
-    padding-left:30%;
+    padding-left:38%;
     color:white;
     position: relative;
     top:0%;
-    font-family: 'Courgette', cursive;
+    font-family: 'LoveNature', cursive;
 }
 .register-body{
+    overflow: auto;
+    height: 400px;
     position: relative;
     top:5%;
     max-width: 70%;
@@ -156,10 +268,12 @@ body{
 }
 .input-field{
     width: 100%;
+    color: white;
     border-radius: 20px;
-    height: 5vh;
+    font-family: 'Roboto', sans-serif;
+    height: 7vh;
     text-align: center;
-    border-color: rgb(13, 201, 54);
+    border-color: rgb(255, 255, 255);
     border-width: 2px;
 }
 
@@ -173,12 +287,13 @@ body{
     transition: background .2s ease-in-out, border .2s ease-in-out;
     border-radius: 50px;
     border-color: rgb(38,216,106);
+    font-family: 'Aclonica', sans-serif;
     height: 50px;
     width: 200px;
     color:rgb(0, 0, 0);
     z-index: 1000;
     position: relative;
-    left:30%;
+    left:38%;
 }
 
 .btn-transparent-register:hover {
@@ -190,15 +305,231 @@ input {
     background: transparent;
 }
 select{
-    background: transparent;
-    color: white;
+    background-color: #1f074b;
+    color: rgb(194, 219, 51);
     text-align: center;
 }
 option{
     color: rgb(255, 254, 254);
+}
+.winners-heading{
+    /* background-color: black; */
+    background-color: #1CB5E0;
+    color: white;
+    margin-bottom: 0;
+}
+.winners-heading h1{
+    padding: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    font-family:'LoveNature', cursive ;
+}
+.winners{
+    background-color: #1CB5E0;
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    padding: 20px;
+    justify-content: space-between;
+}
+.winners2{
+    /* background-color: black; */
+    background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(#1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(#1CB5E0, #000046);
+    padding: 20px;
+    justify-content: space-between;
+}
+.band-name-w{
+    position: absolute;
+    top: 80%;
+    font-size: 1.5em;
+    background-color:rgba(1, 5, 1, 0.6);
+    color: blanchedalmond;
+    text-align: center;
+    width: 100%;
+    font-family:'LoveNature', cursive ;
+}
+.card{
+    height: 40vh;
+    width: 30vw;
+    margin: 10px;
+    position: relative;
+    top: 10%;
     
 }
+.card2{
+    height: 30vh;
+    width: 30vw;
+    margin: 10px;
+    position: relative;
+    top: 40%;
+   
+    background-color: black;
+}
+.c-f{
+    width: 50%;
+    margin: 0%;
+}
+.icons{
+    display: flex;
+    padding-top: 6%;
+    margin: 0%;
+}
+.credits{
+    background-color: #000000;
+    display: flex;
+}
+.ctm{
+    padding-top: 20px;
+}
+.CTM-credits{
+    /* padding-top: 20px; */
+    align-content: center;
+    width: 30%;
+    text-align: center;
+    font-size: 0.75em;
+}
+.CTM-credits a{
+    color: rgb(185, 252, 2);
+}
+.CTM-credits h3{
+    color: white;
+    z-index: 20;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer{
+    background-color: #000000;
+}
+footer .footerlogo{
+    padding-left: 40%;
+    position: absolute;
+}
+.CTM-credits h4{
+    z-index: 200;
+    color: white;
+}
+.CTM-credits h6{
+    z-index: 200;
+    font-size: 1em;
+    color: white;
+}
+.CTM-credits h5{
+    z-index: 200;
+    font-size: 1.5em;
+    color: white;
+}
+.CTM-credits a{
+    color: white;
+}
+.ctm-img{
+    border-radius: 100%;
+    width: 80px;
+}
+.credits div{
+    margin-left: 8%;
+}
+.icon{
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+}
+.contact-sf{
+    margin-top: 0%;
+}
+.copyright{
+    z-index: 2000;
+    color: white;
+    position: absolute;
+    left: 38%;
+    padding-top: 4%;
+    /* margin-bottom: 0%; */
+}
+.prize-heading{
+    font-size: 3em;
+    font-family: 'LoveNature', cursive;
 
+}
+.prize-text{
+    max-width: 70%;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 5px;
+    padding: 10px;
+    /* border: 2px solid rgb(255, 255, 255); */
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+    left: 15%;
+    background-color: rgba(1, 5, 1, 0.6);
+    /* max-height: 100vh; */
+}
+.prize{
+    /* background-color: black;
+    background-image: url('try.jpg'); */
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+/*
+.form2{
+    background-color: black;
+}*/
+.popup {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: rgb(230, 255, 1);
+    background-color: #000000;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  
+  /* The actual popup */
+  .popuptext {
+    visibility: hidden;
+    width: 25%;
+    background-color: rgba(1, 5, 1, 0.6)
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 42.5%;
+    margin-left: -80px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
 @keyframes glow {
     to {
         text-shadow: 0 0 10px red;
@@ -211,15 +542,39 @@ option{
         border-color: green;
     }
 }
-
+@media screen and (min-width: 1000px){
+    .winners{
+        display: flex;
+    }
+    .winners2{
+        display: flex;
+    }
+}
 
 @media screen and (max-width: 1000px){
+    body{
+        background-color: black;
+    }
     .sf-text{
         position: relative;
         left: 0%;
         top: 30%;
         font-size: 6em;
         
+    }
+    .navigation{
+        display: none;
+    }
+    .sponser-n{
+        display: inherit;
+        font-size: 3em;
+        text-align: right;
+        color: ivory;
+            font-family: 'Roboto', sans-serif;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 0%;
+            margin: 0%;
+            
     }
     .main{
         height: 100vh;
@@ -250,7 +605,7 @@ option{
     
     .wildfire-text{
         font-size: 8em;
-        font-family: 'Nosifer', cursive;
+        font-family: 'LoveNature', cursive;
         text-shadow: 0 0 30px rgb(244, 18, 2);
         color: rgb(255, 255, 255);
         position: relative;
@@ -274,7 +629,8 @@ option{
         max-width: 100%;
         font-size: 2.4em;
         text-align: center;
-        top: 30%;
+        position: relative;
+        left: 0%;
     }
     .about-title{
         text-align: center;
@@ -285,23 +641,36 @@ option{
         color: white;
         font-family: 'Courgette', cursive;
     } 
-    
+    .winners-heading h1{
+        margin-top: 0%;
+    }
     .rules{
-        height: 100vh;
-        background-color: black ;
-        background-image: url('map.png');
+        /* height: 100vh; */
+        /* background-color: black ; */
+        background: #000046;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        height: 110%;
+        background-image: unset;
+        text-align: center;
+        /* background-image: url('map.png'); */
     }
     .rules-text{
         position: relative;
-        top:10%;
+        top:0%;
         font-size: 2.5em;
         margin: 0px;
-        font-family: 'Economica', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
+        letter-spacing: 1.1px;
+
         color: rgb(255, 255, 255);
         max-width: 100%;
         padding: 0;
         left:0;
         padding: 0;
+        /* height: 100vh; */
+        font-size: 2.3em;
     }
     .rules-title{
         font-size:7em;
@@ -310,19 +679,26 @@ option{
         top: 0;
         padding:0;
         text-align: center;
-        font-family: 'Courgette', cursive;
+        font-family: 'LoveNature', cursive;
     }
     .form{
+        /* background-color: black; */
         max-width: 100%;
-        height:85%;
+        /* height:95vh; */
         position: relative;
-        left:0%;
-        top:10%;
-        border-radius: 40px;   
+        /* top:10%; */
+        border-radius: 40px; 
+        padding: 0%;
+        position: relative;
+        left: 0;  
+        /*display: flex;*/
+        margin: 10%;
+        overflow: hidden;
     }
     .register-title{
         font-size:5em;
-        padding-left:20%;
+        padding-left:30%;
+        left: 1%;
         color:white;
         position: relative;
         top:0%;
@@ -331,11 +707,17 @@ option{
     .register-body{
         position: relative;
         top:5%;
-        max-width: 70%;
-        left:15%;
+        max-width: 100%;
+        padding: 10px;
+        height: 1200px;
+        overflow-x: hidden;
+        margin: 0;
+        left: 0;
+        /* left:10%; */
     }
     .input-field{
         width: 100%;
+        /*flex: 1;*/
         border-radius: 20px;
         height: 5vh;
         font-size: 2em;
@@ -367,7 +749,6 @@ option{
         color: white;
         background-color: rgba(14, 11, 11, 0.2);
         }   
-    
     input {
         background-color: black;
         /* background: transparent; */
@@ -383,5 +764,29 @@ option{
         color: rgb(17, 16, 16);
         
     }
+    .card{
+        height: 40vh;
+        width: 95vw;
+        margin: 10px;
+        position: relative;
+        top: 10%;
+        flex: 1;
+    }
+    .card2{
+        height: 30vh;
+        width: 95vw;
+        margin: 10px;
+        position: relative;
+        top: 40%;
+        flex: 1;
+        background-color: black;
+    }
     
+}
+.mygithub{
+    border-radius: 100%;
+}
+a:hover{
+    color: yellow;
+    text-decoration: none;
 }
