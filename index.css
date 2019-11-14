@@ -2,11 +2,12 @@
 html {
     scroll-behavior: smooth;
 }
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Muli&display=swap');
 
 body{
     margin: 0px;
     padding:0px;
+    width: 100%;
 }
 #preloader{
     width: 100%;
@@ -15,6 +16,17 @@ body{
     position: fixed;
     z-index: 10000000;
 }
+.bg{
+    background-size: cover;
+}
+.background-bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: url(try.jpg) no-repeat center;
+    background-size: cover;
+}
+
 /* width */
 .sponser-n{
     display: none;
@@ -64,7 +76,8 @@ url('bg_image.jpg'); */
 }
 .navigation{
     margin-left:30% ;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-family: 'Muli', sans-serif;
 }
 a{
     margin: 20px;
@@ -86,12 +99,13 @@ a{
     height: 6vh;
     position: absolute;
     top: 5%;
+    left: 0%;
     cursor: pointer;
 }
 .sf{
     height: 6vh;
     position: absolute;
-    left: 5%;
+    left: 3%;
     cursor: pointer;
     top: 5%;
 }
@@ -107,7 +121,7 @@ a{
     /* font-weight: bold; */
     color: white;
     position: absolute;
-    left: 15%;
+    left: 40%;
     text-align: center;
     text-shadow: 0 0 30px rgb(230, 226, 13);
     top: 23%;
@@ -128,19 +142,14 @@ a{
     font-size:2.5em;
     /* padding-left:10%; */
     padding-top:5%;
-    /* background-color: black; */
-    background: #000046;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1CB5E0, #000046);
+    background-image: url(try.jpg);
+    background-size: cover;
     color: white;
     font-family: 'LoveNature', cursive;
 } 
 .about{
     /* background-color:black ; */
-    background: #000046;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background-image: url(try.jpg);
     color:rgb(255, 255, 255);
     position: relative;
     /* align-content: center; */
@@ -185,12 +194,12 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 .rules{
     height: 100vh;
     margin: 10px;
+    position: relative;
     /*background-color: black ;*/
     background: #000046;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/* 
-    background-image: url('try2.jpg'); */
+    background-image: url('try2.jpg');
     background-size: cover;
 }
 .rules-text{
@@ -228,7 +237,7 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
     overflow: auto;
     position: relative;
     max-width: 100%;
-    height:85%;~
+    height:85%;
     position: relative;
     width: 80%;
     left: 10%;
@@ -314,7 +323,7 @@ option{
 }
 .winners-heading{
     /* background-color: black; */
-    background-color: #1CB5E0;
+    background-image: url(try.jpg);
     color: white;
     margin-bottom: 0;
 }
@@ -324,20 +333,23 @@ option{
     text-align: center;
     font-family:'LoveNature', cursive ;
 }
+.win-tot {
+    background-image: url(try.jpg);
+}
 .winners{
-    background-color: #1CB5E0;
      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: cover;
     padding: 20px;
+    width: 90%;
+    margin: 0 auto;
     justify-content: space-between;
 }
 .winners2{
     /* background-color: black; */
-    background: #000046;  /* fallback for old browsers */
-background: -webkit-linear-gradient(#1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(#1CB5E0, #000046);
-    padding: 20px;
+f    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
     justify-content: space-between;
 }
 .band-name-w{
@@ -396,13 +408,10 @@ background: linear-gradient(#1CB5E0, #000046);
 .CTM-credits h3{
     color: white;
     z-index: 20;
-    font-family: 'Courier New', Courier, monospace;
 }
-footer{
-    background-color: #000000;
-}
-footer .footerlogo{
-    padding-left: 40%;
+.footerlogo{
+    padding-left: 44%;
+    height:70px;
     position: absolute;
 }
 .CTM-credits h4{
@@ -449,7 +458,6 @@ footer .footerlogo{
 .prize-heading{
     font-size: 3em;
     font-family: 'LoveNature', cursive;
-
 }
 .prize-text{
     max-width: 70%;
@@ -466,10 +474,8 @@ footer .footerlogo{
 }
 .prize{
     /* background-color: black;
-    background-image: url('try.jpg'); */
-    background: #000046;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url('try.jpg'); */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url(try.jpg);
     background-size: cover;
     padding-top: 10px;
     color: white;
@@ -577,6 +583,13 @@ footer .footerlogo{
             margin: 0%;
             
     }
+    .prize{
+        width: 100%;
+    }
+    .prize-text{
+        width: 100%;
+        font-size: 2em;
+    }
     .main{
         height: 100vh;
         /*width: 100vw; */
@@ -642,16 +655,22 @@ footer .footerlogo{
         color: white;
         font-family: 'Courgette', cursive;
     } 
+    .winners{
+        margin-left: 0px;
+        margin-right: 0%;
+        width: 100%;
+    }
+    .winners2{
+        width: 100%;
+        padding: 20px;
+    }
+    
     .winners-heading h1{
         margin-top: 0%;
     }
     .rules{
         /* height: 100vh; */
         /* background-color: black ; */
-        background: #000046;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
         height: 110%;
         background-image: unset;
         text-align: center;
@@ -767,7 +786,7 @@ footer .footerlogo{
     }
     .card{
         height: 40vh;
-        width: 95vw;
+        width: 100vw;
         margin: 10px;
         position: relative;
         top: 10%;
@@ -775,12 +794,13 @@ footer .footerlogo{
     }
     .card2{
         height: 30vh;
-        width: 95vw;
+        width: 100%;
         margin: 10px;
         position: relative;
         top: 40%;
         flex: 1;
         background-color: black;
+        margin-left: 0%;
     }
     
 }
@@ -792,5 +812,6 @@ a:hover{
     text-decoration: none;
 }
 .links{
-        color:white
+        color:white;
+        font-size:2em;
 }

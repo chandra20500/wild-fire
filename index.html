@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nosifer|Permanent+Marker&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Aldrich|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="sf-logo.png" />
         <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <script src="index.js"></script>
@@ -22,8 +23,8 @@
                 </div>
                 <div class="main">
                     <div class="navbar">
-                            <img src="kgp-logo.png" class="kgp">
-                            <img src="sf-logo.png" class="sf">
+                            <a href="http://www.iitkgp.ac.in/" target="blank"><img src="kgp-logo.png" class="kgp"></a>
+                            <a href="https://beta.springfest.in/" target="blank"><img src="sf-logo.png" class="sf"></a>
                             <div class="navigation">
                                 
                                 <a href="#about" class="navbar-content">ABOUT</a>
@@ -31,10 +32,10 @@
                                 <a href="#winners" class="navbar-content">PAST WINNERS</a>
                                 <a href="#rules" class="navbar-content">RULES</a>
                                 <a href="#register" class="navbar-content">REGISTER</a>
-                                <a href="sponser.html" class="navbar-content ">SPONSER</a>
+                                <a href="sponser.html" class="navbar-content ">SPONSOR</a>
                             </div>
                         </div>
-                        <a href="sponser.html" class="sponser-n">SPONSERS &nbsp;</a>
+                        <a href="sponser.html" class="sponser-n">SPONSORS &nbsp;</a>
 
                         <div class="overlay">                               
                             
@@ -76,7 +77,8 @@
                             </div>                  
                 </div>
                 
-                
+            <div class="bg">
+                <div class="background-bg"></div>
                 <div class="about-title" id="about">
                         What is Wild Fire ?
                     </div>
@@ -154,13 +156,13 @@
                                    
                             </li>
                             <li>
-                                    In finals, a group will be required to perform at least 4 numbers of their choice within 40 minutes (Amps on to amps off inclusive of sound check).
+                                    In the finals, a group will be required to perform at least 4 numbers of their choice within 40 minutes (Amps on to amps off inclusive of sound check).
                             </li>              
                             <li>
                                     Bands will be disqualified on the spot for misconduct, obscenity or foul language, and will be banned from performing at all subsequent editions of spring fest.    
                             </li>
                             <li>
-                                    Only English and Hindi Rock Music are allowed
+                                    Only English Rock Music is allowed
                             </li>
                             <li>
                                     Equipment provided will be:<br/>
@@ -184,22 +186,23 @@
                             Past winners
                         </h1>
                     </div>
+                    <div class="win-tot">
                     <div class="winners">
                         
-                        <div class="card">
-                            <image src="UA.jpg" height="100%"/>
+                        <div class="card2">
+                            <image src="UA.jpg" height="100%" width="100%"/>
                             <div class="band-name-w">
                                 Undereground Authority
                             </div>
                         </div>
-                        <div class="card">
-                                <image src="parikrama.jpg" height="100%"/>
+                        <div class="card2">
+                                <image src="parikrama.jpg" height="100%" width="100%"/>
                                 <div class="band-name-w">
                                         Parikrama
                                     </div>
                         </div>
-                        <div class="card">
-                                <image src="kryptos.jpg" height="100%" />
+                        <div class="card2">
+                                <image src="kryptos.jpg" height="100%" width="100%"/>
                                 <div class="band-name-w">
                                     Kryptos
                                 </div>
@@ -228,6 +231,7 @@
                                         
                                 </div>
                     </div>
+                </div>
                     
                 <div class="register" id="register">
                     <div class="overlayregister">
@@ -239,11 +243,11 @@
                                 <div class="register-body">
                                     <form action="https://docs.google.com/forms/d/e/1FAIpQLScgr86HDCYpdgcIYdOuXtJxfwN3ZHAH5CPKGGvCR104L3X_xw/formResponse" method="POST">
                                        <p> <input type="text" id="name" placeholder="Name" class="input-field" name="entry.177643183">          </p>                       
-                                        <p> <input type="text" id="team-name" placeholder="band name" class="input-field" name="entry.956647024">   </p>                            
+                                        <p> <input type="text" id="team-name" placeholder="Band name" class="input-field" name="entry.956647024">   </p>                            
                                         <p><input type="number" id="number" placeholder="Mobile number" class="input-field" name="entry.704927778">      </p>
                                         <p> <input type="text" id="email" placeholder="Band E mail" class="input-field" name="entry.2032033899"> </p>
                                         <p> <input type="text" id="institute" placeholder="Name of Institution" class="input-field" name="entry.1283792846"> </p>                             
-                                        <p> <input type="text" id="type" placeholder="type of band" class="input-field" name="institute"> </p>
+                                        <p> <input type="text" id="type" placeholder="Type of band" class="input-field" name="institute"> </p>
                                         <p>
                                         <select class="input-field" id="size" name="entry.884512231" onchange="show_member(this.value)" style="background: #1f074b;">
                                             <option> select team size </option>
@@ -257,10 +261,10 @@
                                             <option value="10">10</option>
                                         </select>   </p>
                                         <br/><br/>                         
-                                        <p><input type="text" id="city" placeholder="city" class="input-field" name="entry.972048782"> </p>
+                                        <p><input type="text" id="city" placeholder="City" class="input-field" name="entry.972048782"> </p>
                                         <div id="members_box"></div>
                                         <input type="text" id="url" placeholder="URL of video" class="input-field" name="entry.1501581755">     <br /><br/>   
-                                        <input type="submit" id="submit" class="btn-transparent-register" placeholder="submit">
+                                        <input type="submit" id="submit" class="btn-transparent-register" placeholder="Submit">
                                     </form>
                                 </div>
                                 <br />
@@ -294,8 +298,7 @@
                             </form>
                         </div> -->
         <footer>
-            <img src="WildFireLogo.png" height="77px" class="footerlogo"/>
-            <p class="copyright">copyright @ spring fest 2020 all rights reserved</p>
+            <img src="WildFireLogo.png"  class="footerlogo" />
                         <div class="credits">
                                 <div class="c-f ctm CTM-credits">
                                         <!-- <center><a href="https://www.facebook.com/aayush.mittal.31?ref=br_rs"> Contact US</a></center>
@@ -350,6 +353,7 @@
                                     </div>
                             </div>
                         </footer>
+                    </div>
                     </div>
                     <!-- copyright @ spring fest 2020 all rights reserved -->
                 </div>

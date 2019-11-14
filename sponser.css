@@ -1,6 +1,7 @@
 .sponser{
     background-image: url(sp.jpg);
     height: 92vh;
+    background-size:cover;
 }
 .sponser-title{
     padding-top: 4%;
@@ -9,7 +10,6 @@
     font-size: 3em;
 }
 .sponser-body{
- 
     padding-left: 4%;
 }
 .navbar{
@@ -72,9 +72,10 @@ a{
 @media screen and (max-width: 1000px){
     .sponser{
         height: 120vh;
+        background-size: cover;
     }
     .sponser-title{
-        font-size: 5em;
+        font-size: 6em;
     }
     .sponser-body{
         width: 100%;
@@ -88,9 +89,19 @@ a{
         width: 50%;
         margin-left:25% ;
     }
+    .sf{
+        left:10%;
+        height:95%;
+    }
+    .kgp{
+        height:95%;
+    }
     .c{
         width: 60%;
         margin-left: 20%;
         margin-top: 8%;
+    }
+    .navigation{
+        margin-left:40%;
     }
 }
